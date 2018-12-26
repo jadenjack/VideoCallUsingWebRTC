@@ -34,8 +34,10 @@ npm install socket.io <br>
 참고 : http://dimdim.tistory.com/entry/openssl-%EC%9D%B8%EC%A6%9D%EC%84%9C-%EC%83%9D%EC%84%B1
 ※ openssl이 미리 설치 되어 있어야한다.
 
-openssl genrsa 1024 > mykey.pem
-RSA 알고리즘으로 만들겠다는 말이고 1024는 RSA 알고리즘의 기반이 되는 숫자를 1024비트로 만들겠다는 말이다.
+> openssl genrsa 1024 > mykey.pem<br>
 
-다음은 개인키를 가지고 디지털 인증서를 만들자.
-openssl req -x509 -new -config "openssl.cnf파일 위치" -key mykey.pem > mycert.pem
+ RSA 알고리즘으로 만들겠다는 말이고 1024는 RSA 알고리즘의 기반이 되는 숫자를 1024비트로 만들겠다는 말이다.
+ 
+다음은 개인키를 가지고 디지털 인증서를 만들자.<br>
+
+> openssl req -x509 -new -config "openssl.cnf파일 위치" -key mykey.pem > mycert.pem
